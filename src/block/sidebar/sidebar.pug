@@ -1,0 +1,26 @@
+mixin b-sidebar()
+    +b('div')#sidebar-wrapper.hidden
+        +b('aside').sidebar
+            +e('div').header
+                +e('span').heading Design
+                +e('img')(src="img/sidebar-logo.png").logo
+            +b('div').sidebar-form-wrapper
+                +b('form')#sidebar-form
+                    +e('span').form-block-heading Layout
+                    +e('label')(for='category') Header
+                    +e('input')(type='select')#category
+                        +e('option') Category
+                    +e('label')(for='subheader') Subheader
+                    +e('input')(type='select')#subheader
+                        +e('option') Status
+                    +e('label')(for='item-label') Item label
+                    +e('input')(type='select')#item-label
+                        +e('option') Task name
+
+                    +e('span').form-block-heading COLORS
+                    +e('label')(for='color') Color by
+                    +e('input')(type='select')#color
+                        +e('option') Status
+
+                    +e('input')(type='checkbox')#color
+                    +e('label')(for='color') Subheader inherits header color

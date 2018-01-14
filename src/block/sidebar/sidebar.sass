@@ -1,0 +1,40 @@
+.sidebar
+  width: 320px
+  height: 100%
+  box-shadow: 0 0 2px rgba(59, 148, 236, 0.3)
+  background-color: #ffffff
+  position: fixed
+  top: 80px
+  right: 0
+  z-index: 1
+  transition: 0.5s
+
+  &__header
+    @include flex-box(flex, row, space-between, center)
+    padding: 0 20px
+    height: 80px
+    width: 320px
+    background-color: #1f8beb
+    overflow: hidden
+  &__logo
+    position: absolute
+    right: 20px
+    top: 20px
+  &__heading
+    width: 61px
+    height: 10px
+    color: #eef4f9
+    font-family: "Work Sans", sans-serif
+    font-size: 16px
+    font-weight: 700
+    line-height: 40px
+    text-transform: uppercase
+    letter-spacing: 0.4px
+
+.sidebar-form-wrapper
+
+#sidebar-form
+  @include flex-box(flex, column, flex-start, flex-start)
+  z-index: 2
+  background-color: #ffffff
+  height: 100%
