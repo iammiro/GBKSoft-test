@@ -1,14 +1,15 @@
+'use strict';
+
 window.addEventListener('load', function () {
 
-  const openSidebar = document.getElementById('openSidebar');
+  var openSidebar = document.getElementById('openSidebar');
   console.log(openSidebar);
 
-  const openSidebarHandler = () => {
-    const sidebar = document.getElementById('sidebar-wrapper');
+  var openSidebarHandler = function openSidebarHandler() {
+    var sidebar = document.getElementById('sidebar-wrapper');
     console.log(sidebar);
     sidebar.classList.toggle('hidden');
   };
 
   openSidebar.addEventListener('click', openSidebarHandler);
-
 });
