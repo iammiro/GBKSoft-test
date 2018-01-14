@@ -21,5 +21,5 @@ to start development server and compile file to /build/
 ## Working time: 
 
 ```
-~ 6h 
+~ 5h 
 ```
